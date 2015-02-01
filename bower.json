@@ -1,0 +1,22 @@
+{
+  "name": "stepForm",
+  "version": "1.0.0",
+  "homepage": "https://github.com/romuloctba/rcLabs",
+  "authors": [
+    "RomuloCtba <romuloctba@gmail.com>"
+  ],
+  "description": "Formulario com diferentes passos para a conclusão",
+  "main": "index.html",
+  "license": "private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
