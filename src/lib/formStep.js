@@ -5,11 +5,9 @@ var nextForm = function(){
 	$('.formStep').last().addClass('formStepLast');
 	if(validateStep()){
 		if($('.currentStep').hasClass('formStepLast')) {
-			console.log("estamos no ultimo step com a classe formStepLast");
 			var formId = $('.stepForm').attr('id');
 			var formContents = getFormObj(formId);
-			console.log('O CONTEUDO É: ', formContents)
-
+			sendForm(formContents);
 		} else {
 			$('.currentStep').toggleClass('currentStep');
 			proxStep.toggleClass('currentStep');
@@ -52,6 +50,7 @@ var validateStep = function(){
 	//form validation goes here
 	return true;
 }
-var sendForm = function(){
+var sendForm = function(content){
 	//send form goes here
+	console.log("Send form contents. Contents: ", content)
 }
